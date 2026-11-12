@@ -1,0 +1,10 @@
+# Dados e artefatos de operação ficam fora deste manual.
+.DS_Store
+.env
+.env.*
+*.sqlite*
+*.db
+*.csv
+reports/
+runtime/
+__pycache__/

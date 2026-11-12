@@ -1,0 +1,18 @@
+{
+  "example": true,
+  "description": "Todos os IDs e nomes são fictícios. Exemplo didático.",
+  "earliest_day": "2026-10-01",
+  "scope": "all_tracked_pages_including_archived",
+  "pages": [
+    {
+      "page_id": "100000000000001",
+      "name": "Página Exemplo A",
+      "in_rotation": true
+    },
+    {
+      "page_id": "100000000000002",
+      "name": "Página Exemplo B",
+      "in_rotation": false
+    }
+  ]
+}

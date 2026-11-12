@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "example": true,
+  "contract": "Simplificado, a implementar; não é drop-in do app original.",
+  "collection": {
+    "requested_at": "2026-10-02T12:00:00-03:00",
+    "observed_at": "2026-10-02T12:05:00-03:00",
+    "generated_at": "2026-10-02T12:06:00-03:00",
+    "export_timezone": "America/Los_Angeles",
+    "coverage": {
+      "tracked_pages": 2,
+      "published": 2,
+      "fresh_exact_views": 1,
+      "fresh_exact_comments": 2,
+      "future": 0,
+      "pending_reconciliation": 0
+    }
+  },
+  "pages": [
+    {
+      "page_id": "100000000000001",
+      "name": "Página Exemplo A",
+      "in_rotation": true
+    },
+    {
+      "page_id": "100000000000002",
+      "name": "Página Exemplo B",
+      "in_rotation": false
+    }
+  ],
+  "publications": [
+    {
+      "page_id": "100000000000001",
+      "content_id": "200000000000001",
+      "published_at": "2026-10-01T10:00:00-03:00",
+      "state": "published",
+      "source_file_sha256": null,
+      "post_url": null
+    },
+    {
+      "page_id": "100000000000002",
+      "content_id": "200000000000002",
+      "published_at": "2026-10-01T18:00:00-03:00",
+      "state": "published",
+      "source_file_sha256": null,
+      "post_url": null
+    }
+  ],
+  "observations": [
+    {
+      "page_id": "100000000000001",
+      "content_id": "200000000000001",
+      "observed_at": "2026-10-02T12:05:00-03:00",
+      "source": "synthetic_fixture",
+      "values": {
+        "views": 120,
+        "comments": 3
+      }
+    },
+    {
+      "page_id": "100000000000002",
+      "content_id": "200000000000002",
+      "observed_at": "2026-10-02T12:05:00-03:00",
+      "source": "synthetic_fixture",
+      "values": {
+        "comments": 0
+      }
+    }
+  ],
+  "expected_summary": {
+    "published": 2,
+    "known_views": 120,
+    "views_coverage": 1,
+    "comments": 3,
+    "comments_coverage": 2,
+    "comment_rate_paired_percent": 2.5
+  },
+  "note": "Views da página B estão ausentes, não são zero. Permalinks foram omitidos para não criar links falsos."
+}
